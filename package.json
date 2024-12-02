@@ -24,7 +24,7 @@
     "@nuxt/devtools": "^1.6.1",
     "@nuxt/eslint-config": "^0.7.2",
     "@pinia/nuxt": "^0.8.0",
-    "eslint": "^9.15.0",
+    "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.7",

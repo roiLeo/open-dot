@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@intlify/shared": "^10.0.5",
-    "@nuxt/devtools": "^1.6.1",
+    "@nuxt/devtools": "^1.6.3",
     "@nuxt/eslint-config": "^0.7.2",
     "@pinia/nuxt": "^0.8.0",
     "eslint": "^9.16.0",

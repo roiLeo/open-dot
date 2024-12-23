@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@nuxt/ui':
         specifier: ^2.20.0
-        version: 2.20.0(change-case@5.4.4)(magicast@0.3.5)(rollup@4.27.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+        version: 2.20.0(change-case@5.4.4)(magicast@0.3.5)(rollup@4.27.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       '@nuxtjs/i18n':
         specifier: ^9.1.1
         version: 9.1.1(@vue/compiler-dom@3.5.13)(eslint@9.17.0(jiti@2.4.1))(magicast@0.3.5)(rollup@4.27.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       '@polkadot-api/descriptors':
         specifier: file:.papi/descriptors
-        version: file:.papi/descriptors(polkadot-api@1.7.8(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1))
+        version: file:.papi/descriptors(polkadot-api@1.8.1(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1))
       '@polkadot/ui-shared':
         specifier: ^3.11.3
         version: 3.11.3(@polkadot/util-crypto@13.2.3(@polkadot/util@13.2.3))(@polkadot/util@13.2.3)
@@ -27,8 +27,8 @@ importers:
         specifier: ^13.2.3
         version: 13.2.3(@polkadot/util@13.2.3)
       polkadot-api:
-        specifier: ^1.7.8
-        version: 1.7.8(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1)
+        specifier: ^1.8.1
+        version: 1.8.1(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1)
       types:
         specifier: link:@polkadot/extension-inject/types
         version: link:@polkadot/extension-inject/types
@@ -38,7 +38,7 @@ importers:
         version: 10.0.5
       '@nuxt/devtools':
         specifier: ^1.6.4
-        version: 1.6.4(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+        version: 1.6.4(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       '@nuxt/eslint-config':
         specifier: ^0.7.3
         version: 0.7.3(@vue/compiler-sfc@3.5.13)(eslint@9.17.0(jiti@2.4.1))(typescript@5.7.2)
@@ -62,7 +62,7 @@ importers:
         version: 15.2.11
       nuxt:
         specifier: ^3.14.1592
-        version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.10.1)(eslint@9.17.0(jiti@2.4.1))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
+        version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
@@ -682,8 +682,8 @@ packages:
     resolution: {integrity: sha512-6GT1BJ852gZ0gItNZN2krX5QAmea+cmdjMvsWohArAZ3GmHdnNANEcF9JjPXAMRtQ6Ux5E269ymamg/+WU6tQA==}
     engines: {node: '>= 16'}
 
-  '@intlify/message-compiler@11.0.0-beta.2':
-    resolution: {integrity: sha512-/cJHP1n45Zlf9tbm/hudLrUwXzJZngR9OMTQk32H1S4lBjM2996wzKTHuLbaJJlJZNTTjnfWZUHPb+F6sE6p1Q==}
+  '@intlify/message-compiler@11.0.0-rc.1':
+    resolution: {integrity: sha512-TGw2uBfuTFTegZf/BHtUQBEKxl7Q/dVGLoqRIdw8lFsp9g/53sYn5iD+0HxIzdYjbWL6BTJMXCPUHp9PxDTRPw==}
     engines: {node: '>= 16'}
 
   '@intlify/shared@10.0.4':
@@ -694,8 +694,8 @@ packages:
     resolution: {integrity: sha512-bmsP4L2HqBF6i6uaMqJMcFBONVjKt+siGluRq4Ca4C0q7W2eMaVZr8iCgF9dKbcVXutftkC7D6z2SaSMmLiDyA==}
     engines: {node: '>= 16'}
 
-  '@intlify/shared@11.0.0-beta.2':
-    resolution: {integrity: sha512-N6ngJfFaVA0l2iLtx/SymgHOBW4wiS5Pyue7YmY/G+mrGjesi+S+U+u/Xlv6pZa/YIBfeM4QB07lI7rz1YqKLg==}
+  '@intlify/shared@11.0.0-rc.1':
+    resolution: {integrity: sha512-8tR1xe7ZEbkabTuE/tNhzpolygUn9OaYp9yuYAF4MgDNZg06C3Qny80bes2/e9/Wm3aVkPUlCw6WgU7mQd0yEg==}
     engines: {node: '>= 16'}
 
   '@intlify/unplugin-vue-i18n@6.0.1':
@@ -990,20 +990,20 @@ packages:
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
-  '@polkadot-api/cli@0.9.22':
-    resolution: {integrity: sha512-nslmAuAeMVExZz9AOUnV2u76PhYhObj9aW64vRqPp7kwAgA/ojOSVwS0Xk7OCeYq8VDSEGxvNPEKn1DW2FjXHg==}
+  '@polkadot-api/cli@0.10.0':
+    resolution: {integrity: sha512-ItuM4l3ZPJYy1dx4X50X3rZK7TpWT0unBGRe+mMRcY4TyRkWK2nIMwcA+ggqBiEaM22SpFh9DCixZtRt43OKkg==}
     hasBin: true
 
-  '@polkadot-api/codegen@0.12.11':
-    resolution: {integrity: sha512-JbQJ4HrdUnHzYkVj4W4uS/lxoRO97DBWKpISx5nLyneZ5kq3V4SDaSjwDTpO+7xWZAniL9b6wA2UiM8F9C9vXw==}
+  '@polkadot-api/codegen@0.12.12':
+    resolution: {integrity: sha512-0jurC0ziMs0CEmHCZ8o2b4kE2pJz0rb/7LzeX/r0ngx60IJV14KSAFoAfipEMgmui3uTsP9goT/q4RmgnZ/2CQ==}
 
   '@polkadot-api/descriptors@file:.papi/descriptors':
     resolution: {directory: .papi/descriptors, type: directory}
     peerDependencies:
       polkadot-api: '*'
 
-  '@polkadot-api/ink-contracts@0.2.3':
-    resolution: {integrity: sha512-gjwpeTMtKAMG0k1RqKAECJmX8CWsY1TP2xiGP4rqbelhXTirootMHqMzYvS9Bn6CVYnipuN97UWiT8wBHpEr6g==}
+  '@polkadot-api/ink-contracts@0.2.4':
+    resolution: {integrity: sha512-peBYPJ0UNMpfTk6iNnDv9293miuOyc8L29UbdtcnEBUKgEnhX4U0ke4oFmbuknYMATHU9nyMY3ftXPcYDpTmwQ==}
 
   '@polkadot-api/json-rpc-provider-proxy@0.2.4':
     resolution: {integrity: sha512-nuGoY9QpBAiRU7xmXN3nugFvPcnSu3IxTLm1OWcNTGlZ1LW5bvdQHz3JLk56+Jlyb3GJ971hqdg2DJsMXkKCOg==}
@@ -1011,26 +1011,26 @@ packages:
   '@polkadot-api/json-rpc-provider@0.0.4':
     resolution: {integrity: sha512-9cDijLIxzHOBuq6yHqpqjJ9jBmXrctjc1OFqU+tQrS96adQze3mTIH6DTgfb/0LMrqxzxffz1HQGrIlEH00WrA==}
 
-  '@polkadot-api/known-chains@0.5.8':
-    resolution: {integrity: sha512-4UoxnqPeJ2viRykArIhUmYsgo2fc84mqC8o/qvmJ0w3r7qwO2/7NS2zpwMuricGtNvdNKyJRMGHAeJdrIfCB3A==}
+  '@polkadot-api/known-chains@0.6.0':
+    resolution: {integrity: sha512-qVNJhqqtjPYgpyEb70KyZPIKunhgR4D3AcZwx5D7QCOumSigEi3vB95pfHHsqER+44jYrlFqzGWauaMMZqQl2Q==}
 
   '@polkadot-api/logs-provider@0.0.6':
     resolution: {integrity: sha512-4WgHlvy+xee1ADaaVf6+MlK/+jGMtsMgAzvbQOJZnP4PfQuagoTqaeayk8HYKxXGphogLlPbD06tANxcb+nvAg==}
 
-  '@polkadot-api/metadata-builders@0.9.3':
-    resolution: {integrity: sha512-QFG/2r8I5vdty8nSV1zg1V8NIYgR0kJ/LazM6yzUZ704Xf+yFhMC1psqLfjmoiAYs1AR5suV8skaJ/+V9ZY30w==}
+  '@polkadot-api/metadata-builders@0.10.0':
+    resolution: {integrity: sha512-IQ9WHnyo0nuWudC39wW1wpRl2QZLL8O8WizwB2JjMv+UODJPsSouZpnGLfQo6mX2umGI1IDsTklb2frQOgVuWg==}
 
-  '@polkadot-api/metadata-compatibility@0.1.13':
-    resolution: {integrity: sha512-KWsGg6m6vJAezl1ECEIMHKc9fOhLXukK7mybngmOsURaICkqxyPJqgha/KExj1qnL11eH8+Z7jWKQ5I7att2FA==}
+  '@polkadot-api/metadata-compatibility@0.1.14':
+    resolution: {integrity: sha512-O7b2+d1uMYFWpe6yW6kY84PGwzdEPBeLopAX9vJl3WTBavF4GYjztM/BD9GjnZ6n2ehmSRjowqZu7EVxYvQYvQ==}
 
-  '@polkadot-api/observable-client@0.6.4':
-    resolution: {integrity: sha512-2wgafHvZP5VroqOHLgoeSBWZRh3vuwTVUqPBI3VmHwDbSfMlUB3dm3ySo6tecXcQWonuKVquCPxBxuY0BV2mBw==}
+  '@polkadot-api/observable-client@0.7.0':
+    resolution: {integrity: sha512-ssDilIFNR+tEMbb9GE/fRXjhKvuFV32DANn5BuQWKOyDbE/d/G206SxLIgBPEQ4HbEzASxFSXJ5L1goDNkJdUA==}
     peerDependencies:
       '@polkadot-api/substrate-client': 0.3.0
       rxjs: '>=7.8.0'
 
-  '@polkadot-api/pjs-signer@0.6.2':
-    resolution: {integrity: sha512-NOkzD6/4zHivr6nhLcWnlZguuyJVtsgrdA37VQj112YmIW5AHpcAbmnO4Vub19wjntlppXwVSQC5B89MkOwhkg==}
+  '@polkadot-api/pjs-signer@0.6.3':
+    resolution: {integrity: sha512-xXLwtDACcFRi5gyze1sfS/GBTjvs1E12R4zvB6TiIzUskFoc26+5xEqjpgo6VRnuIMVv5kWkCEQt+b5F7t76sw==}
 
   '@polkadot-api/polkadot-sdk-compat@2.3.1':
     resolution: {integrity: sha512-rb8IWmPRhKWD9NG4zh2n4q0HlEAvq+Cv1CbD+8YxH0XAqIIiFA+ch5JeDCIxQYngkn/43B0Gs7Gtzh18yv2yoA==}
@@ -1038,11 +1038,11 @@ packages:
   '@polkadot-api/polkadot-signer@0.1.6':
     resolution: {integrity: sha512-X7ghAa4r7doETtjAPTb50IpfGtrBmy3BJM5WCfNKa1saK04VFY9w+vDn+hwEcM4p0PcDHt66Ts74hzvHq54d9A==}
 
-  '@polkadot-api/signer@0.1.12':
-    resolution: {integrity: sha512-Fpsb0DdfsFnKXrKDTkVssfzOVKqGZ087pLsezOTr7Jf2BvlUoFLraDn4QQdnSFFiUskMWtJBUl1mBJBlKIU1AQ==}
+  '@polkadot-api/signer@0.1.13':
+    resolution: {integrity: sha512-QFBeupXDoK/XVno9RdnUoh5HiPC8YC+HtbL0Jz61WrfnBRo77Trv5b0w7pUngpqjQzRY1w68TbETNTqRPtZOFA==}
 
-  '@polkadot-api/signers-common@0.1.3':
-    resolution: {integrity: sha512-Sd68OvuyBLRHRovU3OJgq407OlGoOTb/KLtlV5SnHGRKXDdTI0ArxnGEWICGUm7w4MpbNn5rrnbXGjKS51/YjA==}
+  '@polkadot-api/signers-common@0.1.4':
+    resolution: {integrity: sha512-KMJuu6IMB0K17ppCZM6TSwshTQ8Zgx59+BPVouqnU8pxr+h7EqWf7wv72WyytEAbThWIqFr1VHIdaCj54eeVlg==}
 
   '@polkadot-api/sm-provider@0.1.7':
     resolution: {integrity: sha512-BhNKVeIFZdawpPVadXszLl8IP4EDjcLHe/GchfRRFkvoNFuwS2nNv/npYIqCviXV+dd2R8VnEELxwScsf380Og==}
@@ -1052,8 +1052,8 @@ packages:
   '@polkadot-api/smoldot@0.3.8':
     resolution: {integrity: sha512-dbJSMRFtELDW+rZIWRwKE/K8oy7+gYaGl+DvaOjARoBW2n80rJ7RAMOCCu+b5h2zgl3elftFBwMNAuAWgHT/Zg==}
 
-  '@polkadot-api/substrate-bindings@0.10.0':
-    resolution: {integrity: sha512-0YcYdZ7gU4f/yE8eZ+xDiUDlWOnKSdZI77PZT8Dz0TnXdeYhRehh6PGPp7zY0UoT6d5zGrEq7E7x1FPMCR0Rfw==}
+  '@polkadot-api/substrate-bindings@0.11.0':
+    resolution: {integrity: sha512-UGCa0xYtfcS/5LJAcro1vhIwxF31fsF5f42mzro9G85T854cbXPzqABDICYmJqdF72tBRMrnJlx6okGtLx9TKA==}
 
   '@polkadot-api/substrate-client@0.3.0':
     resolution: {integrity: sha512-0hEvQLKH2zhaFzE8DPkWehvJilec8u2O2wbIEUStm0OJ8jIFtJ40MFjXQfB01dXBWUz1KaVBqS6xd3sZA90Dpw==}
@@ -1347,6 +1347,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@rx-state/core@0.1.4':
+    resolution: {integrity: sha512-Z+3hjU2xh1HisLxt+W5hlYX/eGSDaXXP+ns82gq/PLZpkXLu0uwcNUh9RLY3Clq4zT+hSsA3vcpIGt6+UAb8rQ==}
+    peerDependencies:
+      rxjs: '>=7'
+
   '@scure/base@1.2.1':
     resolution: {integrity: sha512-DGmGtC8Tt63J5GfHgfl5CuAXh96VF/LD8K9Hr/Gv0J2lAoRGlPOMpqMpMbCTOoOJMZCk2Xt+DskdDyn6dEFdzQ==}
 
@@ -1416,6 +1421,9 @@ packages:
 
   '@types/node@22.10.1':
     resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
+
+  '@types/node@22.10.2':
+    resolution: {integrity: sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3663,8 +3671,8 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  polkadot-api@1.7.8:
-    resolution: {integrity: sha512-cMmzGbzcwi4IB+5r5Z/nAzHlZ2D5qRLoPAkMBDtF27icMr6W3YsWoaQgxnPFh/5r2W8FdNj2VtzKgtL18TUeOw==}
+  polkadot-api@1.8.1:
+    resolution: {integrity: sha512-E2Jh9tiO6eB/fjnwr68mnZAZ/UuoZPBZQKjplHSMjVgNNQEkNZSqDcFvH18Rag5x4z7oJzuEk9+Hj62u/+D1PQ==}
     hasBin: true
     peerDependencies:
       rxjs: '>=7.8.0'
@@ -5483,8 +5491,8 @@ snapshots:
 
   '@intlify/bundle-utils@10.0.0(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))':
     dependencies:
-      '@intlify/message-compiler': 11.0.0-beta.2
-      '@intlify/shared': 11.0.0-beta.2
+      '@intlify/message-compiler': 11.0.0-rc.1
+      '@intlify/shared': 11.0.0-rc.1
       acorn: 8.14.0
       escodegen: 2.1.0
       estree-walker: 2.0.2
@@ -5525,16 +5533,16 @@ snapshots:
       '@intlify/shared': 10.0.5
       source-map-js: 1.2.1
 
-  '@intlify/message-compiler@11.0.0-beta.2':
+  '@intlify/message-compiler@11.0.0-rc.1':
     dependencies:
-      '@intlify/shared': 11.0.0-beta.2
+      '@intlify/shared': 11.0.0-rc.1
       source-map-js: 1.2.1
 
   '@intlify/shared@10.0.4': {}
 
   '@intlify/shared@10.0.5': {}
 
-  '@intlify/shared@11.0.0-beta.2': {}
+  '@intlify/shared@11.0.0-rc.1': {}
 
   '@intlify/unplugin-vue-i18n@6.0.1(@vue/compiler-dom@3.5.13)(eslint@9.17.0(jiti@2.4.1))(rollup@4.27.4)(typescript@5.7.2)(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
@@ -5685,12 +5693,12 @@ snapshots:
 
   '@nuxt/devalue@2.0.2': {}
 
-  '@nuxt/devtools-kit@1.6.4(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))':
+  '@nuxt/devtools-kit@1.6.4(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))':
     dependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
       '@nuxt/schema': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
       execa: 7.2.0
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
     transitivePeerDependencies:
       - magicast
       - rollup
@@ -5709,13 +5717,13 @@ snapshots:
       rc9: 2.1.2
       semver: 7.6.3
 
-  '@nuxt/devtools@1.6.4(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
+  '@nuxt/devtools@1.6.4(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@antfu/utils': 0.7.10
-      '@nuxt/devtools-kit': 1.6.4(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
+      '@nuxt/devtools-kit': 1.6.4(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))
       '@nuxt/devtools-wizard': 1.6.4
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
-      '@vue/devtools-core': 7.6.8(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+      '@vue/devtools-core': 7.6.8(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       '@vue/devtools-kit': 7.6.8
       birpc: 0.2.19
       consola: 3.2.3
@@ -5744,9 +5752,9 @@ snapshots:
       sirv: 3.0.0
       tinyglobby: 0.2.10
       unimport: 3.14.5(rollup@4.27.4)
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
-      vite-plugin-inspect: 0.8.9(@nuxt/kit@3.14.1592(magicast@0.3.5)(rollup@4.27.4))(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
-      vite-plugin-vue-inspector: 5.1.3(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
+      vite-plugin-inspect: 0.8.9(@nuxt/kit@3.14.1592(magicast@0.3.5)(rollup@4.27.4))(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))
+      vite-plugin-vue-inspector: 5.1.3(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))
       which: 3.0.1
       ws: 8.18.0
     transitivePeerDependencies:
@@ -5793,13 +5801,13 @@ snapshots:
       - supports-color
       - typescript
 
-  '@nuxt/icon@1.10.2(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
+  '@nuxt/icon@1.10.2(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@iconify/collections': 1.0.494
       '@iconify/types': 2.0.0
       '@iconify/utils': 2.2.0
       '@iconify/vue': 4.2.0(vue@3.5.13(typescript@5.7.2))
-      '@nuxt/devtools-kit': 1.6.4(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
+      '@nuxt/devtools-kit': 1.6.4(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
       consola: 3.2.3
       local-pkg: 0.5.1
@@ -5887,12 +5895,12 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/ui@2.20.0(change-case@5.4.4)(magicast@0.3.5)(rollup@4.27.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
+  '@nuxt/ui@2.20.0(change-case@5.4.4)(magicast@0.3.5)(rollup@4.27.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@headlessui/tailwindcss': 0.2.1(tailwindcss@3.4.16)
       '@headlessui/vue': 1.7.23(vue@3.5.13(typescript@5.7.2))
       '@iconify-json/heroicons': 1.2.1
-      '@nuxt/icon': 1.10.2(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+      '@nuxt/icon': 1.10.2(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
       '@nuxtjs/color-mode': 3.5.2(magicast@0.3.5)(rollup@4.27.4)
       '@nuxtjs/tailwindcss': 6.12.2(magicast@0.3.5)(rollup@4.27.4)
@@ -5931,12 +5939,12 @@ snapshots:
       - vite
       - vue
 
-  '@nuxt/vite-builder@3.14.1592(@types/node@22.10.1)(eslint@9.17.0(jiti@2.4.1))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))':
+  '@nuxt/vite-builder@3.14.1592(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
       '@rollup/plugin-replace': 6.0.1(rollup@4.27.4)
-      '@vitejs/plugin-vue': 5.2.1(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
-      '@vitejs/plugin-vue-jsx': 4.1.1(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+      '@vitejs/plugin-vue': 5.2.1(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+      '@vitejs/plugin-vue-jsx': 4.1.1(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       autoprefixer: 10.4.20(postcss@8.4.49)
       clear: 0.1.0
       consola: 3.2.3
@@ -5963,9 +5971,9 @@ snapshots:
       ufo: 1.5.4
       unenv: 1.10.0
       unplugin: 1.16.0
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
-      vite-node: 2.1.6(@types/node@22.10.1)(terser@5.36.0)
-      vite-plugin-checker: 0.8.0(eslint@9.17.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
+      vite-node: 2.1.6(@types/node@22.10.2)(terser@5.36.0)
+      vite-plugin-checker: 0.8.0(eslint@9.17.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))
       vue: 3.5.13(typescript@5.7.2)
       vue-bundle-renderer: 2.1.1
     transitivePeerDependencies:
@@ -6138,24 +6146,24 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@polkadot-api/cli@0.9.22(jiti@2.4.1)(postcss@8.4.49)(yaml@2.6.1)':
+  '@polkadot-api/cli@0.10.0(jiti@2.4.1)(postcss@8.4.49)(yaml@2.6.1)':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
-      '@polkadot-api/codegen': 0.12.11
-      '@polkadot-api/ink-contracts': 0.2.3
+      '@polkadot-api/codegen': 0.12.12
+      '@polkadot-api/ink-contracts': 0.2.4
       '@polkadot-api/json-rpc-provider': 0.0.4
-      '@polkadot-api/known-chains': 0.5.8
-      '@polkadot-api/metadata-compatibility': 0.1.13
-      '@polkadot-api/observable-client': 0.6.4(@polkadot-api/substrate-client@0.3.0)(rxjs@7.8.1)
+      '@polkadot-api/known-chains': 0.6.0
+      '@polkadot-api/metadata-compatibility': 0.1.14
+      '@polkadot-api/observable-client': 0.7.0(@polkadot-api/substrate-client@0.3.0)(rxjs@7.8.1)
       '@polkadot-api/polkadot-sdk-compat': 2.3.1
       '@polkadot-api/sm-provider': 0.1.7(@polkadot-api/smoldot@0.3.8)
       '@polkadot-api/smoldot': 0.3.8
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/substrate-client': 0.3.0
       '@polkadot-api/utils': 0.1.2
       '@polkadot-api/wasm-executor': 0.1.2
       '@polkadot-api/ws-provider': 0.3.6
-      '@types/node': 22.10.1
+      '@types/node': 22.10.2
       commander: 12.1.0
       execa: 9.5.2
       fs.promises.exists: 1.1.4
@@ -6177,22 +6185,22 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@polkadot-api/codegen@0.12.11':
+  '@polkadot-api/codegen@0.12.12':
     dependencies:
-      '@polkadot-api/ink-contracts': 0.2.3
-      '@polkadot-api/metadata-builders': 0.9.3
-      '@polkadot-api/metadata-compatibility': 0.1.13
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/ink-contracts': 0.2.4
+      '@polkadot-api/metadata-builders': 0.10.0
+      '@polkadot-api/metadata-compatibility': 0.1.14
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/utils': 0.1.2
 
-  '@polkadot-api/descriptors@file:.papi/descriptors(polkadot-api@1.7.8(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1))':
+  '@polkadot-api/descriptors@file:.papi/descriptors(polkadot-api@1.8.1(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1))':
     dependencies:
-      polkadot-api: 1.7.8(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1)
+      polkadot-api: 1.8.1(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1)
 
-  '@polkadot-api/ink-contracts@0.2.3':
+  '@polkadot-api/ink-contracts@0.2.4':
     dependencies:
-      '@polkadot-api/metadata-builders': 0.9.3
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/metadata-builders': 0.10.0
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/utils': 0.1.2
       scale-ts: 1.6.1
 
@@ -6200,36 +6208,36 @@ snapshots:
 
   '@polkadot-api/json-rpc-provider@0.0.4': {}
 
-  '@polkadot-api/known-chains@0.5.8': {}
+  '@polkadot-api/known-chains@0.6.0': {}
 
   '@polkadot-api/logs-provider@0.0.6':
     dependencies:
       '@polkadot-api/json-rpc-provider': 0.0.4
 
-  '@polkadot-api/metadata-builders@0.9.3':
+  '@polkadot-api/metadata-builders@0.10.0':
     dependencies:
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/utils': 0.1.2
 
-  '@polkadot-api/metadata-compatibility@0.1.13':
+  '@polkadot-api/metadata-compatibility@0.1.14':
     dependencies:
-      '@polkadot-api/metadata-builders': 0.9.3
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/metadata-builders': 0.10.0
+      '@polkadot-api/substrate-bindings': 0.11.0
 
-  '@polkadot-api/observable-client@0.6.4(@polkadot-api/substrate-client@0.3.0)(rxjs@7.8.1)':
+  '@polkadot-api/observable-client@0.7.0(@polkadot-api/substrate-client@0.3.0)(rxjs@7.8.1)':
     dependencies:
-      '@polkadot-api/metadata-builders': 0.9.3
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/metadata-builders': 0.10.0
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/substrate-client': 0.3.0
       '@polkadot-api/utils': 0.1.2
       rxjs: 7.8.1
 
-  '@polkadot-api/pjs-signer@0.6.2':
+  '@polkadot-api/pjs-signer@0.6.3':
     dependencies:
-      '@polkadot-api/metadata-builders': 0.9.3
+      '@polkadot-api/metadata-builders': 0.10.0
       '@polkadot-api/polkadot-signer': 0.1.6
-      '@polkadot-api/signers-common': 0.1.3
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/signers-common': 0.1.4
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/utils': 0.1.2
 
   '@polkadot-api/polkadot-sdk-compat@2.3.1':
@@ -6238,19 +6246,19 @@ snapshots:
 
   '@polkadot-api/polkadot-signer@0.1.6': {}
 
-  '@polkadot-api/signer@0.1.12':
+  '@polkadot-api/signer@0.1.13':
     dependencies:
       '@noble/hashes': 1.6.1
       '@polkadot-api/polkadot-signer': 0.1.6
-      '@polkadot-api/signers-common': 0.1.3
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/signers-common': 0.1.4
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/utils': 0.1.2
 
-  '@polkadot-api/signers-common@0.1.3':
+  '@polkadot-api/signers-common@0.1.4':
     dependencies:
-      '@polkadot-api/metadata-builders': 0.9.3
+      '@polkadot-api/metadata-builders': 0.10.0
       '@polkadot-api/polkadot-signer': 0.1.6
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/utils': 0.1.2
 
   '@polkadot-api/sm-provider@0.1.7(@polkadot-api/smoldot@0.3.8)':
@@ -6267,7 +6275,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@polkadot-api/substrate-bindings@0.10.0':
+  '@polkadot-api/substrate-bindings@0.11.0':
     dependencies:
       '@noble/hashes': 1.6.1
       '@polkadot-api/utils': 0.1.2
@@ -6564,6 +6572,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.27.4':
     optional: true
 
+  '@rx-state/core@0.1.4(rxjs@7.8.1)':
+    dependencies:
+      rxjs: 7.8.1
+
   '@scure/base@1.2.1': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
@@ -6629,6 +6641,10 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/node@22.10.1':
+    dependencies:
+      undici-types: 6.20.0
+
+  '@types/node@22.10.2':
     dependencies:
       undici-types: 6.20.0
 
@@ -6788,19 +6804,19 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vitejs/plugin-vue-jsx@4.1.1(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
+  '@vitejs/plugin-vue-jsx@4.1.1(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-transform-typescript': 7.26.3(@babel/core@7.26.0)
       '@vue/babel-plugin-jsx': 1.2.5(@babel/core@7.26.0)
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-vue@5.2.1(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
+  '@vitejs/plugin-vue@5.2.1(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
       vue: 3.5.13(typescript@5.7.2)
 
   '@vue-macros/common@1.15.0(rollup@4.27.4)(vue@3.5.13(typescript@5.7.2))':
@@ -6878,14 +6894,14 @@ snapshots:
 
   '@vue/devtools-api@6.6.4': {}
 
-  '@vue/devtools-core@7.6.8(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
+  '@vue/devtools-core@7.6.8(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@vue/devtools-kit': 7.6.8
       '@vue/devtools-shared': 7.6.8
       mitt: 3.0.1
       nanoid: 5.0.9
       pathe: 1.1.2
-      vite-hot-client: 0.2.4(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
+      vite-hot-client: 0.2.4(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
       - vite
@@ -8860,14 +8876,14 @@ snapshots:
 
   nuxi@3.16.0: {}
 
-  nuxt@3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.10.1)(eslint@9.17.0(jiti@2.4.1))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0)):
+  nuxt@3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0)):
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.6.4(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+      '@nuxt/devtools': 1.6.4(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
       '@nuxt/schema': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
       '@nuxt/telemetry': 2.6.0(magicast@0.3.5)(rollup@4.27.4)
-      '@nuxt/vite-builder': 3.14.1592(@types/node@22.10.1)(eslint@9.17.0(jiti@2.4.1))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+      '@nuxt/vite-builder': 3.14.1592(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       '@unhead/dom': 1.11.13
       '@unhead/shared': 1.11.13
       '@unhead/ssr': 1.11.13
@@ -8928,7 +8944,7 @@ snapshots:
       vue-router: 4.5.0(vue@3.5.13(typescript@5.7.2))
     optionalDependencies:
       '@parcel/watcher': 2.5.0
-      '@types/node': 22.10.1
+      '@types/node': 22.10.2
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -9186,26 +9202,27 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  polkadot-api@1.7.8(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1):
+  polkadot-api@1.8.1(jiti@2.4.1)(postcss@8.4.49)(rxjs@7.8.1)(yaml@2.6.1):
     dependencies:
-      '@polkadot-api/cli': 0.9.22(jiti@2.4.1)(postcss@8.4.49)(yaml@2.6.1)
-      '@polkadot-api/ink-contracts': 0.2.3
+      '@polkadot-api/cli': 0.10.0(jiti@2.4.1)(postcss@8.4.49)(yaml@2.6.1)
+      '@polkadot-api/ink-contracts': 0.2.4
       '@polkadot-api/json-rpc-provider': 0.0.4
-      '@polkadot-api/known-chains': 0.5.8
+      '@polkadot-api/known-chains': 0.6.0
       '@polkadot-api/logs-provider': 0.0.6
-      '@polkadot-api/metadata-builders': 0.9.3
-      '@polkadot-api/metadata-compatibility': 0.1.13
-      '@polkadot-api/observable-client': 0.6.4(@polkadot-api/substrate-client@0.3.0)(rxjs@7.8.1)
-      '@polkadot-api/pjs-signer': 0.6.2
+      '@polkadot-api/metadata-builders': 0.10.0
+      '@polkadot-api/metadata-compatibility': 0.1.14
+      '@polkadot-api/observable-client': 0.7.0(@polkadot-api/substrate-client@0.3.0)(rxjs@7.8.1)
+      '@polkadot-api/pjs-signer': 0.6.3
       '@polkadot-api/polkadot-sdk-compat': 2.3.1
       '@polkadot-api/polkadot-signer': 0.1.6
-      '@polkadot-api/signer': 0.1.12
+      '@polkadot-api/signer': 0.1.13
       '@polkadot-api/sm-provider': 0.1.7(@polkadot-api/smoldot@0.3.8)
       '@polkadot-api/smoldot': 0.3.8
-      '@polkadot-api/substrate-bindings': 0.10.0
+      '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/substrate-client': 0.3.0
       '@polkadot-api/utils': 0.1.2
       '@polkadot-api/ws-provider': 0.3.6
+      '@rx-state/core': 0.1.4(rxjs@7.8.1)
       rxjs: 7.8.1
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
@@ -9507,7 +9524,7 @@ snapshots:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.2
       parse-json: 8.1.0
-      type-fest: 4.29.0
+      type-fest: 4.30.1
       unicorn-magic: 0.1.0
 
   readable-stream@2.3.8:
@@ -10264,17 +10281,17 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-hot-client@0.2.4(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0)):
+  vite-hot-client@0.2.4(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0)):
     dependencies:
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
 
-  vite-node@2.1.6(@types/node@22.10.1)(terser@5.36.0):
+  vite-node@2.1.6(@types/node@22.10.2)(terser@5.36.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.0(supports-color@9.4.0)
       es-module-lexer: 1.5.4
       pathe: 1.1.2
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -10286,7 +10303,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-checker@0.8.0(eslint@9.17.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0)):
+  vite-plugin-checker@0.8.0(eslint@9.17.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0)):
     dependencies:
       '@babel/code-frame': 7.26.2
       ansi-escapes: 4.3.2
@@ -10298,7 +10315,7 @@ snapshots:
       npm-run-path: 4.0.1
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.3
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.12
@@ -10308,7 +10325,7 @@ snapshots:
       optionator: 0.9.4
       typescript: 5.7.2
 
-  vite-plugin-inspect@0.8.9(@nuxt/kit@3.14.1592(magicast@0.3.5)(rollup@4.27.4))(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0)):
+  vite-plugin-inspect@0.8.9(@nuxt/kit@3.14.1592(magicast@0.3.5)(rollup@4.27.4))(rollup@4.27.4)(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0)):
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.4(rollup@4.27.4)
@@ -10319,14 +10336,14 @@ snapshots:
       perfect-debounce: 1.0.0
       picocolors: 1.1.1
       sirv: 3.0.0
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
     optionalDependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite-plugin-vue-inspector@5.1.3(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0)):
+  vite-plugin-vue-inspector@5.1.3(vite@5.4.11(@types/node@22.10.2)(terser@5.36.0)):
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-proposal-decorators': 7.25.9(@babel/core@7.26.0)
@@ -10337,17 +10354,17 @@ snapshots:
       '@vue/compiler-dom': 3.5.13
       kolorist: 1.8.0
       magic-string: 0.30.17
-      vite: 5.4.11(@types/node@22.10.1)(terser@5.36.0)
+      vite: 5.4.11(@types/node@22.10.2)(terser@5.36.0)
     transitivePeerDependencies:
       - supports-color
 
-  vite@5.4.11(@types/node@22.10.1)(terser@5.36.0):
+  vite@5.4.11(@types/node@22.10.2)(terser@5.36.0):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.49
       rollup: 4.27.4
     optionalDependencies:
-      '@types/node': 22.10.1
+      '@types/node': 22.10.2
       fsevents: 2.3.3
       terser: 5.36.0
 
@@ -10487,7 +10504,7 @@ snapshots:
       deepmerge-ts: 7.1.3
       read-pkg: 9.0.1
       sort-keys: 5.1.0
-      type-fest: 4.29.0
+      type-fest: 4.30.1
       write-json-file: 6.0.0
 
   ws@8.18.0: {}

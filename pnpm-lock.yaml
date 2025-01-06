@@ -34,8 +34,8 @@ importers:
         version: link:@polkadot/extension-inject/types
     devDependencies:
       '@intlify/shared':
-        specifier: ^10.0.5
-        version: 10.0.5
+        specifier: ^11.0.1
+        version: 11.0.1
       '@nuxt/devtools':
         specifier: ^1.7.0
         version: 1.7.0(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.2)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.2))

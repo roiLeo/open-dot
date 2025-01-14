@@ -38,7 +38,8 @@ export const chains = new Map<ChainId, Map<AssetId, AssetInChain>>()
 export const useChain = () => {
   const chains = Object.entries(CHAIN_NAMES).map((chain) => ({
     value: chain[0],
-    label: chain[1]
+    label: chain[1],
+    img: '~/assets/logos/paseo.pn'
   }))
   const assets = Object.entries(CHAIN_NAMES).map((chain) => ({
     value: chain[0],

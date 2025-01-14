@@ -1,17 +1,17 @@
 <template>
   <div class="pt-8">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-sm w-full">
-      <UCard>
+    <div class="mx-auto max-w-md w-full">
+      <UCard :ui="{ body: { padding: 'p-0 sm:p-0' }}">
         <template #header>
           <h1 class="text-2xl font-bold lg:text-4xl lg:tracking-tight">Transfer</h1>
           <p class="text-sm text-gray-400">Use this project Starter Kit to build your collaborative app in minutes.</p>
         </template>
 
-        <div class="space-y-4">
-          <div>
-            <WalletBalance />
-          </div>
+        <WalletBalance />
 
+        <UDivider />
+
+        <div class="space-y-4 px-4 py-5 sm:p-6">
           <UFormGroup label="From chain">
             <USelectMenu v-model="selectedFromChain" :options="chains" />
           </UFormGroup>
@@ -23,7 +23,7 @@
           <UFormGroup label="Amount" required>
             <UButtonGroup class="w-full">
               <USelectMenu v-model="selectedToChain" class="w-32" :options="chains" />
-              <UInput v-model="amount" type="number" required />
+              <UInput class="w-full" v-model="amount" type="number" required />
             </UButtonGroup>
           </UFormGroup>
         </div>

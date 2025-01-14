@@ -1,5 +1,5 @@
 <template>
-	<!-- Main modal -->
+  <!-- Main modal -->
   <UModal>
     <UCard>
       <template #header>
@@ -22,8 +22,8 @@
           <li v-for="(wallet, idx) in wallets" :key="idx">
             <a
               href="#"
-              @click="setWallet(wallet)"
               class="flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow"
+              @click="setWallet(wallet)"
             >
               <img
                 class="w-4"
@@ -48,8 +48,8 @@
 
       <div v-show="hasSelectedWalletProvider && hasWalletProviderExtension">
         <p
-          class="text-sm font-normal text-gray-500"
           v-if="selectedWalletProvider"
+          class="text-sm font-normal text-gray-500"
         >
           Choose your
           <img
@@ -63,8 +63,8 @@
 
         <!-- Wallet accounts -->
         <select
-          class="my-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3 py-2 form-select appearance-none block"
           v-model="selectedAccount"
+          class="my-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3 py-2 form-select appearance-none block"
           @change="setAccount(selectedAccount)"
         >
           <option selected disabled>Select an account</option>
@@ -110,13 +110,13 @@ const {
 const selectedAccount = ref('')
 
 watchEffect(() => {
-	// wallets.value = SupportedWallets.map((wallet) => {
-	// 	const { isMobileApp, isBrowserExtension } = wallet
-	// 	if (isMobileDevice) {
-	// 		return isMobileApp ? wallet : null
-	// 	} else {
-	// 		return isBrowserExtension ? wallet : null
-	// 	}
-	// }).filter((wallet) => wallet !== null) as Wallet[]
+  // wallets.value = SupportedWallets.map((wallet) => {
+  // 	const { isMobileApp, isBrowserExtension } = wallet
+  // 	if (isMobileDevice) {
+  // 		return isMobileApp ? wallet : null
+  // 	} else {
+  // 		return isBrowserExtension ? wallet : null
+  // 	}
+  // }).filter((wallet) => wallet !== null) as Wallet[]
 })
 </script>

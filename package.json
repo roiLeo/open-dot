@@ -23,9 +23,9 @@
     "@intlify/shared": "^11.0.1",
     "@nuxt/devtools": "^1.7.0",
     "@nuxt/eslint-config": "^0.7.5",
-    "@pinia/nuxt": "^0.8.0",
+    "@pinia/nuxt": "^0.9.0",
     "eslint": "^9.18.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
@@ -35,13 +35,15 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.20.0",
+    "@nuxt/eslint": "^0.7.5",
+    "@nuxt/ui": "^2.21.0",
     "@nuxtjs/i18n": "^9.1.1",
     "@polkadot-api/descriptors": "file:.papi/descriptors",
-    "@polkadot/ui-shared": "^3.11.3",
-    "@polkadot/util": "^13.2.3",
-    "@polkadot/util-crypto": "^13.2.3",
-    "polkadot-api": "^1.8.1",
+    "@polkadot/ui-shared": "^3.12.1",
+    "@polkadot/util": "^13.3.1",
+    "@polkadot/util-crypto": "^13.3.1",
+    "polkadot-api": "^1.8.2",
+    "smoldot": "^2.0.34",
     "types": "link:@polkadot/extension-inject/types"
   }
 }

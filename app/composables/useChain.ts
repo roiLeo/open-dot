@@ -1,4 +1,4 @@
-import type { PolkadotSigner, SS58String, Transaction } from "polkadot-api"
+import type { PolkadotSigner, SS58String, Transaction } from 'polkadot-api'
 export type TeleportAsset = (
   from: PolkadotSigner,
   amount: bigint,

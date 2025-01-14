@@ -1,4 +1,4 @@
-import type { CookieRef } from "#app"
+import type { CookieRef } from '#app'
 
 interface State {
   account: CookieRef<string | null | undefined>
@@ -6,13 +6,13 @@ interface State {
 
 export const useAccountStore = defineStore('account', {
   state: (): State => ({
-    account: useCookie('wallet.account'),
+    account: useCookie('wallet.account')
   }),
   getters: {
-    getAccount: (state) => state.account,
+    getAccount: (state) => state.account
   },
   actions: {
-    setAccount(address: string) {
+    setAccount (address: string) {
       const cookieAccount = useCookie('wallet.account', {
         secure: true,
         path: '/',
@@ -22,7 +22,7 @@ export const useAccountStore = defineStore('account', {
       this.account = address
       cookieAccount.value = address
     },
-    resetAccount() {
+    resetAccount () {
       console.log('init logout...')
       const cookieAccount = useCookie('wallet.account', {
         secure: true,
@@ -32,6 +32,6 @@ export const useAccountStore = defineStore('account', {
       })
       this.account = ''
       cookieAccount.value = ''
-    },
-  },
+    }
+  }
 })

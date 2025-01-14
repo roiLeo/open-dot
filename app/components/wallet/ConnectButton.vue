@@ -6,7 +6,7 @@
     color="primary"
     variant="ghost"
     @click="toggleWalletModal"
-	/>
+  />
 
   <WalletModal v-model="isWalletModalOpen" @close-modal="toggleWalletModal" />
 </template>

@@ -5,11 +5,11 @@ import type {
 	InjectedExtension,
 	InjectedMetadata,
 	InjectedProvider,
-	InjectedWindow,
+	InjectedWindow
 } from '@polkadot/extension-inject/types'
 import { formatAddress } from '@/composables/utils'
 
-const DAPP_NAME = 'Dot-Transfer';
+const DAPP_NAME = 'Dot-Transfer'
 const AHK_PREFIX = 2
 const AHP_PREFIX = 0
 const BSX_PREFIX = 10041
@@ -31,24 +31,24 @@ export class BaseDotsamaWallet implements Wallet {
 	_provider: InjectedProvider | undefined
 
 	// API docs: https://polkadot.js.org/docs/extension/
-	get extension() {
+	get extension () {
 		return this._extension
 	}
 
 	// API docs: https://polkadot.js.org/docs/extension/
-	get signer() {
+	get signer () {
 		return this._signer
 	}
 
-	get metadata() {
+	get metadata () {
 		return this._metadata
 	}
 
-	get provider() {
+	get provider () {
 		return this._provider
 	}
 
-	get installed() {
+	get installed () {
 		const injectedWindow = window as Window & InjectedWindow
 		const injectedExtension =
 			injectedWindow?.injectedWeb3?.[this.extensionName]
@@ -56,7 +56,7 @@ export class BaseDotsamaWallet implements Wallet {
 		return !!injectedExtension
 	}
 
-	get rawExtension() {
+	get rawExtension () {
 		const injectedWindow = window as Window & InjectedWindow
 		const injectedExtension =
 			injectedWindow?.injectedWeb3?.[this.extensionName]
@@ -79,7 +79,7 @@ export class BaseDotsamaWallet implements Wallet {
 				...rawExtension,
 				// Manually add `InjectedExtensionInfo` so as to have a consistent response.
 				name: this.extensionName,
-				version: injectedExtension.version,
+				version: injectedExtension.version
 			}
 
 			this._extension = extension
@@ -112,7 +112,7 @@ export class BaseDotsamaWallet implements Wallet {
 						source: this._extension?.name as string,
 						// Added extra fields here for convenience
 						wallet: this,
-						signer: this._extension?.signer,
+						signer: this._extension?.signer
 					}
 				})
 				callback(accountsWithWallet)
@@ -140,7 +140,7 @@ export class BaseDotsamaWallet implements Wallet {
 				source: this._extension?.name as string,
 				// Added extra fields here for convenience
 				wallet: this,
-				signer: this._extension?.signer,
+				signer: this._extension?.signer
 			}
 		})
 	}

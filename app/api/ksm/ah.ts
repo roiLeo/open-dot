@@ -1,25 +1,26 @@
+import type {
+  XcmVersionedLocation } from '@polkadot-api/descriptors'
 import {
   XcmV3Junction,
   XcmV3JunctionNetworkId,
   XcmV3Junctions,
-  XcmVersionedLocation,
-  ksmAh,
-} from "@polkadot-api/descriptors"
-import { ksmAhClient } from "@/api/clients"
-import { AssetInChain } from "../types"
+  ksmAh
+} from '@polkadot-api/descriptors'
+import { ksmAhClient } from '@/api/clients'
+import type { AssetInChain } from '../types'
 import {
   fromAssetHubToForeign,
   fromAssetHubToRelay,
   getNativeAsset,
   watchAccoutFreeBalance,
-  watchForeingAssetAccoutFreeBalance,
-} from "../common"
+  watchForeingAssetAccoutFreeBalance
+} from '../common'
 
 const api = ksmAhClient.getTypedApi(ksmAh)
 
 const ksm: AssetInChain = {
-  chain: "ksmAh",
-  symbol: "KSM",
+  chain: 'ksmAh',
+  symbol: 'KSM',
   watchFreeBalance: watchAccoutFreeBalance(api),
   teleport: {
     ksm: (...args) =>
@@ -31,22 +32,22 @@ const ksm: AssetInChain = {
           1000,
           getNativeAsset(1, amount),
           from,
-          to,
-        ),
-      ),
-  },
+          to
+        )
+      )
+  }
 }
 
 const dotInKsmAh: Parameters<typeof XcmVersionedLocation.V4>[0] = {
   parents: 2,
   interior: XcmV3Junctions.X1(
-    XcmV3Junction.GlobalConsensus(XcmV3JunctionNetworkId.Polkadot()),
-  ),
+    XcmV3Junction.GlobalConsensus(XcmV3JunctionNetworkId.Polkadot())
+  )
 }
 
 const dot: AssetInChain = {
-  chain: "ksmAh",
-  symbol: "DOT",
+  chain: 'ksmAh',
+  symbol: 'DOT',
   watchFreeBalance: watchForeingAssetAccoutFreeBalance(api, dotInKsmAh),
   teleport: {
     /*
@@ -66,7 +67,7 @@ const dot: AssetInChain = {
         ),
       ),
     */
-  },
+  }
 }
 
 export default [dot, ksm]

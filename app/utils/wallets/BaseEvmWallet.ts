@@ -1,6 +1,6 @@
-import { MetaMaskInpageProvider } from '@metamask/providers'
+import type { MetaMaskInpageProvider } from '@metamask/providers'
 import type { Maybe } from '@metamask/types'
-import { EvmWallet } from '@/utils/wallets'
+import type { EvmWallet } from '@/utils/wallets'
 
 export class BaseEvmWallet implements EvmWallet {
   img = ''
@@ -21,7 +21,7 @@ export class BaseEvmWallet implements EvmWallet {
 
   _extension: MetaMaskInpageProvider | undefined
 
-  constructor() {
+  constructor () {
     this.isReady = this.waitReady().then((extension) => {
       this._extension = extension
       this._isReady = true
@@ -30,13 +30,13 @@ export class BaseEvmWallet implements EvmWallet {
     })
   }
 
-  private lookupProvider() {
+  private lookupProvider () {
     return ((window && window[this.extensionName]) ||
       (window?.ethereum &&
         window?.ethereum[this.isSetGlobalString])) as MetaMaskInpageProvider
   }
 
-  private async waitReady(
+  private async waitReady (
     timeout = 3000
   ): Promise<MetaMaskInpageProvider | undefined> {
     if (this._isReady) {
@@ -79,7 +79,7 @@ export class BaseEvmWallet implements EvmWallet {
     })
   }
 
-  get extension() {
+  get extension () {
     if (!this._extension) {
       this._extension = this.lookupProvider()
     }
@@ -87,14 +87,14 @@ export class BaseEvmWallet implements EvmWallet {
     return this._extension
   }
 
-  get installed() {
+  get installed () {
     return !!this.extension
   }
 
   enable = async (): Promise<boolean> => {
     await this.isReady
     const accounts = await this.request<string[]>({
-      method: 'eth_requestAccounts',
+      method: 'eth_requestAccounts'
     })
 
     console.log(accounts)
@@ -112,7 +112,7 @@ export class BaseEvmWallet implements EvmWallet {
     }
 
     const accounts = this._extension.request<string[]>({
-      method: 'eth_requestAccounts',
+      method: 'eth_requestAccounts'
     })
 
     if (accounts) {

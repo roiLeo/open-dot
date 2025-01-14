@@ -1,12 +1,13 @@
 <template>
   <svg :width="size" :height="size" viewBox="0 0 64 64">
-    <circle v-for="(circle, index) in circles"
+    <circle
+      v-for="(circle, index) in circles"
       :key="index"
       :cx="circle.cx"
       :cy="circle.cy"
       :r="circle.r"
       :fill="circle.fill"
-      />
+    />
   </svg>
 </template>
 

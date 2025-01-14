@@ -1,16 +1,16 @@
-import type { Observable } from "rxjs"
-import type { PolkadotSigner, SS58String, Transaction } from "polkadot-api"
+import type { Observable } from 'rxjs'
+import type { PolkadotSigner, SS58String, Transaction } from 'polkadot-api'
 
 export type ChainId =
-  | "dot"
-  | "dotAh"
-  | "wnd"
-  | "wndAh"
-  | "ksm"
-  | "ksmAh"
-  | "pas"
-  | "pasAh"
-export type AssetId = "DOT" | "KSM" | "WND" | "PAS"
+  | 'dot'
+  | 'dotAh'
+  | 'wnd'
+  | 'wndAh'
+  | 'ksm'
+  | 'ksmAh'
+  | 'pas'
+  | 'pasAh'
+export type AssetId = 'DOT' | 'KSM' | 'WND' | 'PAS'
 
 export type TeleportAsset = (
   from: PolkadotSigner,

@@ -11,17 +11,17 @@ export type FormatCurrencyOptions = {
 const defaultOptions: FormatCurrencyOptions = {
   nDecimals: Infinity,
   padToDecimals: true,
-  decimalSeparator: decimalSeparatorDisplay,
+  decimalSeparator: decimalSeparatorDisplay
 }
 
 export const formatCurrency = (
   value: bigint | null,
   precision: number,
-  options: Partial<any> = {},
+  options: Partial<any> = {}
 ): string => {
   const { nDecimals, padToDecimals, decimalSeparator } = {
     ...defaultOptions,
-    ...options,
+    ...options
   }
   if (value === null) return ''
   const precisionMultiplier = 10n ** BigInt(precision)
@@ -65,7 +65,7 @@ type BigNumber = {
 export const divideBigInt = (
   numerator: BigNumber,
   denominator: BigNumber,
-  targetPrecision?: bigint,
+  targetPrecision?: bigint
 ) => {
   const precision = targetPrecision ?? numerator.precision
   return (

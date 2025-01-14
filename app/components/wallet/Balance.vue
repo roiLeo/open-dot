@@ -27,7 +27,7 @@
             </div>
           </td>
           <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(dotBalance, ASSET_DECIMALS['DOT'], {nbDecimals: 4, padToDecimal: false}) }}</span>
+            <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(dotBalance, ASSET_DECIMALS['DOT'], { nbDecimals: 4, padToDecimal: false }) }}</span>
           </td>
         </tr>
         <tr>
@@ -39,7 +39,7 @@
             </div>
           </td>
           <td class="size-px whitespace-nowrap px-6 py-3">
-            <!-- <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(ahDotBalance, ASSET_DECIMALS['DOT'], {nbDecimals: 4, padToDecimal: false}) }}</span> -->
+            <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(ahdotBalance, ASSET_DECIMALS['DOT'], { nbDecimals: 4, padToDecimal: false }) }}</span>
           </td>
         </tr>
 
@@ -49,27 +49,8 @@
 </template>
 
 <script lang="ts" setup>
-// import { formatPrice } from '@/composables/utils'
-// import { dot } from '@polkadot-api/descriptors'
-
-// const { assetHubDotClient, dotClient } = useClient()
 const { ASSET_DECIMALS } = useChain()
-// const { account } = useConnectWallet()
-
-// const dotApi = dotClient.getTypedApi(dot)
-// // const ksmApi = ksmClient.getTypedApi(dot)
-// const ahDotApi = assetHubDotClient.getTypedApi(dot)
-// // const ahKsmApi = assetHubKsmClient.getTypedApi(dot)
-
-// const dotAccountInfo = await dotApi.query.System.Account.getValue(
-//   account.value as string,
-// )
-// const ahDotAccountInfo = await ahDotApi.query.System.Account.getValue(
-//   account.value as string,
-// )
-
-// const dotBalance = ref(dotAccountInfo.data.free)
-// const ahDotBalance = ref(ahDotAccountInfo.data.free)
 
 const dotBalance = useBalance('dot', 'DOT')
+const ahdotBalance = useBalance('dotAh', 'DOT')
 </script>

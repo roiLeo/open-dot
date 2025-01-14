@@ -1,4 +1,4 @@
-import { MetaMaskInpageProvider } from '@metamask/providers'
+import type { MetaMaskInpageProvider } from '@metamask/providers'
 import { PolkadotjsWallet } from '~/utils/wallets/PolkadotjsWallet'
 import { MetamaskWallet } from '~/utils/wallets/MetamaskWallet'
 import { LedgerWallet } from '~/utils/wallets/LedgerWallet'
@@ -28,7 +28,7 @@ export const SubstrateWallets = [
   SupportWalletExtension.Math,
   SupportWalletExtension.Nova,
   SupportWalletExtension.SubWallet,
-  SupportWalletExtension.Talisman,
+  SupportWalletExtension.Talisman
 ]
 
 // export const isMobileDevice = 'ontouchstart' in document.documentElement && navigator.userAgent.match(/Mobi/)
@@ -43,10 +43,10 @@ export const SupportedWallets = [
   new PolkadotjsWallet(),
   new MetamaskWallet(),
   new SubWallet(),
-  new TalismanWallet(),
+  new TalismanWallet()
 ]
 
-export function getWalletBySource(
+export function getWalletBySource (
   source: string | unknown
 ): Wallet | undefined {
   return SupportedWallets.find((wallet) => {
@@ -54,7 +54,7 @@ export function getWalletBySource(
   })
 }
 
-export function isWalletInstalled(source: string | unknown): boolean {
+export function isWalletInstalled (source: string | unknown): boolean {
   const wallet = getWalletBySource(source)
   return wallet?.installed as boolean
 }

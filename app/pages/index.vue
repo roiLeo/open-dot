@@ -20,12 +20,11 @@
             <USelectMenu v-model="selectedAsset" :options="assets" />
           </UFormGroup>
 
-          <UFormGroup label="To chain">
-            <USelectMenu v-model="selectedToChain" :options="chains" />
-          </UFormGroup>
-
           <UFormGroup label="Amount" required>
-            <UInput v-model="amount" type="number" required />
+            <UButtonGroup class="w-full">
+              <USelectMenu v-model="selectedToChain" class="w-32" :options="chains" />
+              <UInput v-model="amount" type="number" required />
+            </UButtonGroup>
           </UFormGroup>
         </div>
 

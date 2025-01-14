@@ -34,14 +34,14 @@ const items = [
     {
       label: account.value,
       slot: 'account',
-      disabled: true,
-    },
+      disabled: true
+    }
   ],
   [
     {
       label: 'Settings',
-      icon: 'i-heroicons-cog-8-tooth',
-    },
+      icon: 'i-heroicons-cog-8-tooth'
+    }
   ],
   [
     {
@@ -51,15 +51,15 @@ const items = [
     },
     {
       label: 'Status',
-      icon: 'i-heroicons-signal',
-    },
+      icon: 'i-heroicons-signal'
+    }
   ],
   [
     {
       label: 'Sign out',
       icon: 'i-heroicons-arrow-left-on-rectangle',
       click: () => resetAccount()
-    },
-  ],
+    }
+  ]
 ]
 </script>

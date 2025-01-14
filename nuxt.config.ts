@@ -14,5 +14,13 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
 
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        moduleResolution: 'bundler'
+      }
+    }
+  },
+
   compatibilityDate: '2024-11-19'
 })

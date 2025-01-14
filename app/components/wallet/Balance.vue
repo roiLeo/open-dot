@@ -39,31 +39,7 @@
             </div>
           </td>
           <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(ahDotBalance, ASSET_DECIMALS['DOT'], {nbDecimals: 4, padToDecimal: false}) }}</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <div class="flex items-center gap-x-3">
-              <img class="shrink-0 size-5" src="https://cryptologos.cc/logos/kusama-ksm-logo.svg?v=035" />
-              <span class="font-semibold text-sm text-gray-800 dark:text-white">Kusama</span>
-              <span class="text-xs text-gray-500 dark:text-neutral-500">KSM</span>
-            </div>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(ksmBalance, ASSET_DECIMALS['KSM'], {nbDecimals: 4, padToDecimal: false}) }}</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <div class="flex items-center gap-x-3">
-              <img class="shrink-0 size-5" src="https://cryptologos.cc/logos/kusama-ksm-logo.svg?v=035" />
-              <span class="font-semibold text-sm text-gray-800 dark:text-white">AssetHub</span>
-              <span class="text-xs text-gray-500 dark:text-neutral-500">KSM</span>
-            </div>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(ahKsmBalance, ASSET_DECIMALS['KSM'], {nbDecimals: 4, padToDecimal: false}) }}</span>
+            <!-- <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(ahDotBalance, ASSET_DECIMALS['DOT'], {nbDecimals: 4, padToDecimal: false}) }}</span> -->
           </td>
         </tr>
 
@@ -74,32 +50,26 @@
 
 <script lang="ts" setup>
 // import { formatPrice } from '@/composables/utils'
-import { dot } from '@polkadot-api/descriptors'
+// import { dot } from '@polkadot-api/descriptors'
 
-const { assetHubDotClient, assetHubKsmClient, dotClient, ksmClient } = useClient()
+// const { assetHubDotClient, dotClient } = useClient()
 const { ASSET_DECIMALS } = useChain()
-const { account } = useConnectWallet()
+// const { account } = useConnectWallet()
 
-const dotApi = dotClient.getTypedApi(dot)
-const ksmApi = ksmClient.getTypedApi(dot)
-const ahDotApi = assetHubDotClient.getTypedApi(dot)
-const ahKsmApi = assetHubKsmClient.getTypedApi(dot)
+// const dotApi = dotClient.getTypedApi(dot)
+// // const ksmApi = ksmClient.getTypedApi(dot)
+// const ahDotApi = assetHubDotClient.getTypedApi(dot)
+// // const ahKsmApi = assetHubKsmClient.getTypedApi(dot)
 
-const dotAccountInfo = await dotApi.query.System.Account.getValue(
-  account.value as string,
-)
-const ksmAccountInfo = await ksmApi.query.System.Account.getValue(
-  account.value as string,
-)
-const ahDotAccountInfo = await ahDotApi.query.System.Account.getValue(
-  account.value as string,
-)
-const ahKsmAccountInfo = await ahKsmApi.query.System.Account.getValue(
-  account.value as string,
-)
+// const dotAccountInfo = await dotApi.query.System.Account.getValue(
+//   account.value as string,
+// )
+// const ahDotAccountInfo = await ahDotApi.query.System.Account.getValue(
+//   account.value as string,
+// )
 
-const dotBalance = ref(dotAccountInfo.data.free)
-const ksmBalance = ref(ksmAccountInfo.data.free)
-const ahDotBalance = ref(ahDotAccountInfo.data.free)
-const ahKsmBalance = ref(ahKsmAccountInfo.data.free)
+// const dotBalance = ref(dotAccountInfo.data.free)
+// const ahDotBalance = ref(ahDotAccountInfo.data.free)
+
+const dotBalance = useBalance('dot', 'DOT')
 </script>

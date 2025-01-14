@@ -1,6 +1,6 @@
-export const decimalSeparatorDisplay = "."
-export const decimalSeparatorsInput = [".", ","]
-export const decimalSeparatorRegex = ",|."
+export const decimalSeparatorDisplay = '.'
+export const decimalSeparatorsInput = ['.', ',']
+export const decimalSeparatorRegex = ',|.'
 
 export type FormatCurrencyOptions = {
   nDecimals: number
@@ -23,7 +23,7 @@ export const formatCurrency = (
     ...defaultOptions,
     ...options,
   }
-  if (value === null) return ""
+  if (value === null) return ''
   const precisionMultiplier = 10n ** BigInt(precision)
   if (nDecimals < precision) {
     value = value / 10n ** BigInt(precision - (nDecimals + 1))
@@ -35,7 +35,7 @@ export const formatCurrency = (
   const isNegative = value < 0n
   const absValue = isNegative ? value * -1n : value
   let intPartStr = (absValue / precisionMultiplier).toString()
-  if (isNegative) intPartStr = "-" + intPartStr
+  if (isNegative) intPartStr = '-' + intPartStr
   const decimalPart = absValue % precisionMultiplier
 
   if (
@@ -47,11 +47,11 @@ export const formatCurrency = (
 
   let newDecimalPart = decimalPart
     .toString()
-    .padStart(precision, "0")
-    .replace(/00*$/, "")
+    .padStart(precision, '0')
+    .replace(/00*$/, '')
 
   if (nDecimals !== Infinity && padToDecimals === true) {
-    newDecimalPart = newDecimalPart.padEnd(nDecimals, "0")
+    newDecimalPart = newDecimalPart.padEnd(nDecimals, '0')
   }
 
   return intPartStr + decimalSeparator + newDecimalPart

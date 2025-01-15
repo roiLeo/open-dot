@@ -1,4 +1,3 @@
-import type { Observable } from 'rxjs'
 import type { PolkadotSigner, SS58String, Transaction } from 'polkadot-api'
 
 export type ChainId =
@@ -10,6 +9,7 @@ export type ChainId =
   | 'ksmAh'
   | 'pas'
   | 'pasAh'
+
 export type AssetId = 'DOT' | 'KSM' | 'WND' | 'PAS'
 
 export type TeleportAsset = (
@@ -21,6 +21,6 @@ export type TeleportAsset = (
 export interface AssetInChain {
   chain: ChainId
   symbol: AssetId
-  watchFreeBalance: (from: SS58String) => Observable<bigint>
+  watchFreeBalance: (from: SS58String) => Promise<bigint>
   teleport: Partial<Record<ChainId, TeleportAsset>>
 }

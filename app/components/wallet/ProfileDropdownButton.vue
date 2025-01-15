@@ -5,7 +5,7 @@
     :popper="{ placement: 'bottom-start' }"
   >
     <UButton aria-label="your Wallet" color="gray" variant="ghost" square>
-      <CommonDotAvatar size="14" theme="polkadot" :address="account" class="avatar" />
+      <CommonDotAvatar size="20" theme="polkadot" :address="account" class="avatar" />
     </UButton>
     <template #account="{ item }">
       <div class="text-left truncate">

@@ -1,6 +1,6 @@
 import { pas as descriptors } from '@polkadot-api/descriptors'
 import { pasClient } from '@/api/clients'
-import type { AssetInChain } from '../types'
+import type { AssetInChain } from '~/types'
 import { fromRelayToAssetHub, watchAccoutFreeBalance } from '../common'
 
 const api = pasClient.getTypedApi(descriptors)

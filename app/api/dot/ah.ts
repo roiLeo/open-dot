@@ -7,7 +7,7 @@ import {
   dotAh
 } from '@polkadot-api/descriptors'
 import { dotAhClient } from '@/api/clients'
-import type { AssetInChain } from '../types'
+import type { AssetInChain } from '~/types'
 import {
   fromAssetHubToForeign,
   fromAssetHubToRelay,

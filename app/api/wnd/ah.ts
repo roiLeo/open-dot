@@ -1,6 +1,6 @@
 import { wndAssethub as descriptors } from '@polkadot-api/descriptors'
 import { wndAhClient } from '@/api/clients'
-import type { AssetInChain } from '../types'
+import type { AssetInChain } from '~/types'
 import { fromAssetHubToRelay, watchAccoutFreeBalance } from '../common'
 
 const api = wndAhClient.getTypedApi(descriptors)

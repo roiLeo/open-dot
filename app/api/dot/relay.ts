@@ -1,6 +1,6 @@
 import { dot as dotDescriptors } from '@polkadot-api/descriptors'
 import { dotClient } from '@/api/clients'
-import type { AssetInChain } from '../types'
+import type { AssetInChain } from '~/types'
 import { fromRelayToAssetHub, watchAccoutFreeBalance } from '../common'
 
 const api = dotClient.getTypedApi(dotDescriptors)

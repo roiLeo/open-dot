@@ -2,7 +2,7 @@ import dot from './dot'
 import ksm from './ksm'
 import wnd from './wnd'
 import pas from './pas'
-import type { AssetId, AssetInChain, ChainId } from './types'
+import type { AssetId, AssetInChain, ChainId } from '~/types'
 
 const assetsInChains = [...dot, ...ksm, ...wnd, ...pas]
 

@@ -7,7 +7,7 @@ import {
   ksmAh
 } from '@polkadot-api/descriptors'
 import { ksmAhClient } from '@/api/clients'
-import type { AssetInChain } from '../types'
+import type { AssetInChain } from '~/types'
 import {
   fromAssetHubToForeign,
   fromAssetHubToRelay,

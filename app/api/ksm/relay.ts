@@ -1,6 +1,6 @@
 import { ksm as descriptors } from '@polkadot-api/descriptors'
 import { ksmClient } from '@/api/clients'
-import type { AssetInChain } from '../types'
+import type { AssetInChain } from '~/types'
 import { fromRelayToAssetHub, watchAccoutFreeBalance } from '../common'
 
 const api = ksmClient.getTypedApi(descriptors)

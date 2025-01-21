@@ -23,11 +23,15 @@
             <div class="flex items-center gap-x-3">
               <img class="shrink-0 size-5 rounded-full" :src="balance.img" />
               <span class="font-semibold text-sm text-gray-800 dark:text-white">{{ balance.label }}</span>
-              <span class="text-xs text-gray-500 dark:text-neutral-500">{{ balance.asset }}</span>
             </div>
           </td>
-          <td class="size-px whitespace-nowrap px-6 py-3 text-end">
-            <span class="text-sm text-gray-800 dark:text-white">{{ formatCurrency(balance.amount.value, ASSET_DECIMALS[balance.asset as AssetId], { nbDecimals: 4, padToDecimal: false }) }}</span>
+          <td class="size-px whitespace-nowrap px-6 py-3">
+            <div class="flex items-center justify-end gap-x-3">
+              <span class="text-sm text-gray-800 dark:text-white">
+                {{ formatCurrency(balance.amount.value, ASSET_DECIMALS[balance.asset as AssetId], { nbDecimals: 4, padToDecimal: false }) }}
+              </span>
+              <span class="text-xs text-gray-500 dark:text-neutral-500">{{ balance.asset }}</span>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -38,17 +42,5 @@
 <script lang="ts" setup>
 import type { AssetId } from '~/types'
 
-const { ASSET_DECIMALS, CHAIN_NAMES } = useChain()
-
-const dotBalance = useBalance('dot', 'DOT')
-const dotAhBalance = useBalance('dotAh', 'DOT')
-const ksmBalance = useBalance('ksm', 'KSM')
-const ksmAhBalance = useBalance('ksmAh', 'KSM')
-
-const accountBalance = [
-  { ...CHAIN_NAMES['dot'], asset: 'DOT', amount: dotBalance },
-  { ...CHAIN_NAMES['dotAh'], asset: 'DOT', amount: dotAhBalance },
-  { ...CHAIN_NAMES['ksm'], asset: 'KSM', amount: ksmBalance },
-  { ...CHAIN_NAMES['ksmAh'], asset: 'KSM', amount: ksmAhBalance }
-]
+const accountBalance = useAccountBalance()
 </script>

@@ -29,7 +29,8 @@ export const useChain = () => {
   }))
   const assets = Object.entries(CHAIN_NAMES).map((chain) => ({
     value: chain[0],
-    label: chain[1].asset
+    label: chain[1].asset,
+    avatar: { src: chain[1].img }
   }))
   return {
     assets,

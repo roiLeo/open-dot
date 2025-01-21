@@ -1,6 +1,6 @@
-import { type AssetId, type ChainId, chains } from '@/api'
+import { chains } from '@/api'
 import type { SS58String } from 'polkadot-api'
-// import SmWorker from "polkadot-api/smoldot/worker?worker"
+import type { AssetId, ChainId } from '@/types'
 
 export const useBalance = (chain: ChainId, asset: AssetId) => {
   const accountStore = useAccountStore()
@@ -23,7 +23,7 @@ export const useBalance = (chain: ChainId, asset: AssetId) => {
       .get(chain)!
       .get(asset)!
       .watchFreeBalance(account.value as SS58String)
-      .subscribe((newBalance) => {
+      .subscribe((newBalance: bigint | null) => {
         balance.value = newBalance
       })
   }, { immediate: true })

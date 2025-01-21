@@ -1,4 +1,8 @@
 
+import dot from '~/api/dot'
+import ksm from '~/api/ksm'
+import wnd from '~/api/wnd'
+import pas from '~/api/pas'
 import type { AssetId, AssetInChain, ChainId } from '~/types'
 
 export const ASSET_DECIMALS: Record<AssetId, number> = {
@@ -19,7 +23,18 @@ export const CHAIN_NAMES: Record<ChainId, { label: string, img: string, asset: A
   pasAh: { asset: 'PAS', label: 'Paseo AssetHub', img: '/img/chains/assethub-polkadot.svg' }
 }
 
-export const chains = new Map<ChainId, Map<AssetId, AssetInChain>>()
+const assetsInChains = [...dot, ...ksm, ...wnd, ...pas]
+
+export const chainsMap = new Map<ChainId, Map<AssetId, AssetInChain>>()
+
+assetsInChains.forEach((assetinChain) => {
+  const { chain, symbol } = assetinChain
+  console.log(assetinChain)
+  console.log(chain, symbol)
+  if (!chainsMap.has(chain)) chainsMap.set(chain, new Map())
+
+  chainsMap.get(chain)!.set(symbol, assetinChain)
+})
 
 export const useChain = () => {
   const chains = Object.entries(CHAIN_NAMES).map((chain) => ({
@@ -35,6 +50,8 @@ export const useChain = () => {
   return {
     assets,
     chains,
+    chainsMap,
+    assetsInChains,
     ASSET_DECIMALS,
     CHAIN_NAMES
   }

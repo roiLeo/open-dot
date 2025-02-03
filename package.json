@@ -37,7 +37,7 @@
   "dependencies": {
     "@nuxt/eslint": "^1.0.0",
     "@nuxt/ui": "^2.21.0",
-    "@nuxtjs/i18n": "^9.1.1",
+    "@nuxtjs/i18n": "^9.1.5",
     "@polkadot-api/descriptors": "file:.papi/descriptors",
     "@polkadot/ui-shared": "^3.12.1",
     "@polkadot/util": "^13.3.1",

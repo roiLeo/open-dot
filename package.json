@@ -42,7 +42,7 @@
     "@polkadot/ui-shared": "^3.12.1",
     "@polkadot/util": "^13.3.1",
     "@polkadot/util-crypto": "^13.3.1",
-    "polkadot-api": "^1.8.2",
+    "polkadot-api": "^1.8.4",
     "smoldot": "^2.0.34",
     "types": "link:@polkadot/extension-inject/types"
   }

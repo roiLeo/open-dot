@@ -40,8 +40,8 @@ importers:
         version: link:@polkadot/extension-inject/types
     devDependencies:
       '@intlify/shared':
-        specifier: ^11.0.1
-        version: 11.0.1
+        specifier: ^11.1.0
+        version: 11.1.0
       '@nuxt/devtools':
         specifier: ^1.7.0
         version: 1.7.0(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
@@ -586,10 +586,6 @@ packages:
 
   '@intlify/shared@11.0.0-rc.1':
     resolution: {integrity: sha512-8tR1xe7ZEbkabTuE/tNhzpolygUn9OaYp9yuYAF4MgDNZg06C3Qny80bes2/e9/Wm3aVkPUlCw6WgU7mQd0yEg==}
-    engines: {node: '>= 16'}
-
-  '@intlify/shared@11.0.1':
-    resolution: {integrity: sha512-lH164+aDDptHZ3dBDbIhRa1dOPQUp+83iugpc+1upTOWCnwyC1PVis6rSWNMMJ8VQxvtHQB9JMib48K55y0PvQ==}
     engines: {node: '>= 16'}
 
   '@intlify/shared@11.1.0':
@@ -5607,8 +5603,6 @@ snapshots:
   '@intlify/shared@10.0.5': {}
 
   '@intlify/shared@11.0.0-rc.1': {}
-
-  '@intlify/shared@11.0.1': {}
 
   '@intlify/shared@11.1.0': {}
 

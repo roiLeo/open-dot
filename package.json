@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@intlify/shared": "^11.1.0",
-    "@nuxt/devtools": "^1.7.0",
-    "@nuxt/eslint-config": "^1.0.0",
+    "@nuxt/devtools": "^2.0.0",
+    "@nuxt/eslint-config": "^1.0.1",
     "@pinia/nuxt": "^0.9.0",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
@@ -35,7 +35,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "@nuxt/eslint": "^1.0.0",
+    "@nuxt/eslint": "^1.0.1",
     "@nuxt/ui": "^2.21.0",
     "@nuxtjs/i18n": "^9.1.5",
     "@polkadot-api/descriptors": "file:.papi/descriptors",

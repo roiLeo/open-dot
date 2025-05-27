@@ -1,10 +1,9 @@
 <template>
   <div class="pt-8">
     <div class="mx-auto max-w-md w-full">
-      <UCard :ui="{ body: { padding: 'p-0 sm:p-0' } }">
+      <UCard :ui="{ body: 'p-0 sm:p-0' }">
         <template #header>
           <h1 class="text-2xl font-bold lg:text-4xl lg:tracking-tight">Transferable</h1>
-          <!-- <p class="text-sm text-gray-400">Use this project Starter Kit to build your collaborative app in minutes.</p> -->
         </template>
 
         <WalletBalance />
@@ -12,40 +11,42 @@
         <UDivider />
 
         <div class="space-y-4 px-4 py-5 sm:p-6">
-          <UFormGroup label="From chain">
-            <USelectMenu v-model="selectedFromChain" :options="chains" size="xl" />
-          </UFormGroup>
+          <UFormField label="From chain">
+            <USelectMenu v-model="selectedFromChain" :items="chains" size="xl" class="w-full" />
+          </UFormField>
 
-          <UFormGroup label="Amount" required>
+          <UFormField label="Amount" required>
             <UButtonGroup size="xl" class="w-full">
-              <USelectMenu v-model="selectedAsset" class="w-40" :options="assetOptions" :disabled="!selectedFromChain" @change="handleSelectChange" />
+              <USelectMenu v-model="selectedAsset" class="w-40" :items="assetOptions" :disabled="!selectedFromChain" @update:modelValue="handleSelectChange" />
               <UInput
                 v-model="amount"
                 class="w-full"
                 type="number"
                 required
-                :ui="{ icon: { trailing: { pointer: '' } } }"
+                :ui="{ trailing: 'pe-1' }"
                 min="0"
                 style="appearance: textfield;"
               >
                 <template #trailing>
                   <UButton
-                    size="xs"
-                    color="gray"
+                    color="neutral"
+                    variant="link"
+                    size="sm"
                     label="MAX"
+                    aria-label="MAX"
                     @click="amount = 1234"
                   />
                 </template>
               </UInput>
             </UButtonGroup>
-          </UFormGroup>
+          </UFormField>
 
-          <UFormGroup label="Destination chain">
-            <USelectMenu v-model="selectedToChain" :options="chainToOptions" :disabled="!selectedFromChain" size="xl" />
-          </UFormGroup>
+          <UFormField label="Destination chain">
+            <USelectMenu v-model="selectedToChain" :items="chainToOptions" :disabled="!selectedFromChain" size="xl" class="w-full" />
+          </UFormField>
 
-          <div v-if="amount" class="flex justify-between">
-            <div class="text-gray-500">Estimate Fee</div>
+          <div v-if="selectedAsset && amount" class="flex justify-between">
+            <div class="text-neutral-500">Estimate Fee</div>
             <div>123124 {{ selectedAsset.label }}</div>
           </div>
         </div>

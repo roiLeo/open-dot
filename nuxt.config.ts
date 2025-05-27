@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt'
   ],
 
-  ui: { global: true },
+  css: ['~/assets/css/main.css'],
 
   colorMode: {
     preference: 'dark',

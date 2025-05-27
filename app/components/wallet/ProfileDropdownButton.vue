@@ -1,30 +1,24 @@
 <template>
-  <UDropdown
+  <UDropdownMenu
     :items="items"
-    :ui="{ item: { disabled: 'cursor-text select-text' } }"
     :popper="{ placement: 'bottom-start' }"
   >
-    <UButton aria-label="your Wallet" color="gray" variant="ghost" square>
+    <UButton aria-label="your Wallet" color="neutral" variant="ghost" square>
       <CommonDotAvatar size="20" theme="polkadot" :address="account" class="avatar" />
     </UButton>
-    <template #account="{ item }">
+    <template #account-label="{ item }">
       <div class="text-left truncate">
         <p>Signed in as</p>
-        <p class="truncate font-medium text-gray-900 dark:text-white">
+        <p class="truncate font-medium text-neutral-900 dark:text-white">
           {{ shortAddress(item.label) }}
         </p>
       </div>
     </template>
 
-    <template #item="{ item }">
+    <template #item-label="{ item }">
       <span class="truncate">{{ item.label }}</span>
-
-      <UIcon
-        class="flex-shrink-0 h-4 w-4 text-gray-400 dark:text-gray-500 ms-auto"
-        :name="item.icon"
-      />
     </template>
-  </UDropdown>
+  </UDropdownMenu>
 </template>
 
 <script lang="ts" setup>
@@ -58,7 +52,7 @@ const items = [
     {
       label: 'Sign out',
       icon: 'i-heroicons-arrow-left-on-rectangle',
-      click: () => resetAccount()
+      onSelect: () => resetAccount()
     }
   ]
 ]

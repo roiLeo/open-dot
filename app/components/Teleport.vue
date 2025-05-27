@@ -4,7 +4,7 @@
       <label for="from-chain">From Chain:</label>
       <select
         v-model="state.from"
-        class="form-select"
+        class="block w-full rounded-md border border-neutral-300 p-2"
         @change="handleFromChange"
       >
         <option
@@ -21,7 +21,7 @@
       <label for="asset">Asset:</label>
       <select
         v-model="state.asset.selected"
-        class="form-select"
+        class="block w-full rounded-md border border-neutral-300 p-2"
         @change="handleAssetChange"
       >
         <option
@@ -38,7 +38,7 @@
       <label for="to-chain">To Chain:</label>
       <select
         v-model="state.to.selected"
-        class="form-select"
+        class="block w-full rounded-md border border-neutral-300 p-2"
       >
         <option
           v-for="chain in state.to.options"
@@ -56,7 +56,7 @@
       </div>
       <ul class="grid gap-3 m-2">
         <li class="flex items-center justify-between">
-          <span class="text-gray-600">{{ CHAIN_NAMES[state.from] }}</span>
+          <span class="text-neutral-600">{{ CHAIN_NAMES[state.from] }}</span>
           <span>
             <FormattedToken
               :asset="state.asset.selected"
@@ -65,7 +65,7 @@
           </span>
         </li>
         <li class="flex items-center justify-between">
-          <span class="text-gray-600">{{ CHAIN_NAMES[state.to.selected] }}</span>
+          <span class="text-neutral-600">{{ CHAIN_NAMES[state.to.selected] }}</span>
           <span>
             <FormattedToken
               :asset="state.asset.selected"
@@ -82,7 +82,7 @@
         v-model="amount"
         type="number"
         id="amount"
-        class="form-input"
+        class="block w-full rounded-md border border-neutral-300 p-2"
         placeholder="Amount to teleport"
       />
     </div>
@@ -167,13 +167,3 @@ const toBalance = computed(() =>
   useBalance(state.to.selected, state.asset.selected)
 )
 </script>
-
-<style scoped>
-.form-select {
-  @apply block w-full rounded-md border border-gray-300 p-2;
-}
-
-.form-input {
-  @apply block w-full rounded-md border border-gray-300 p-2;
-}
-</style>

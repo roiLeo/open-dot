@@ -33,8 +33,8 @@ importers:
         specifier: ^1.12.1
         version: 1.12.1(jiti@2.4.2)(postcss@8.5.3)(rxjs@7.8.2)(yaml@2.8.0)
       smoldot:
-        specifier: ^2.0.35
-        version: 2.0.35
+        specifier: ^3.1.1
+        version: 3.1.1
       types:
         specifier: link:@polkadot/extension-inject/types
         version: link:@polkadot/extension-inject/types
@@ -2027,8 +2027,8 @@ packages:
   '@vue/devtools-api@6.6.4':
     resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
-  '@vue/devtools-api@7.7.6':
-    resolution: {integrity: sha512-b2Xx0KvXZObePpXPYHvBRRJLDQn5nhKjXh7vUhMEtWxz1AYNFOVIsh5+HLP8xDGL7sy+Q7hXeUxPHB/KgbtsPw==}
+  '@vue/devtools-api@7.7.9':
+    resolution: {integrity: sha512-kIE8wvwlcZ6TJTbNeU2HQNtaxLx3a84aotTITUuL/4bzfPxzajGBOoqjMhwZJ8L9qFYDU/lAYMEEm11dnZOD6g==}
 
   '@vue/devtools-core@7.6.8':
     resolution: {integrity: sha512-8X4roysTwzQ94o7IobjVcOd1aZF5iunikrMrHPI2uUdigZCi2kFTQc7ffYiFiTNaLElCpjOhCnM7bo7aK1yU7A==}
@@ -2046,8 +2046,14 @@ packages:
   '@vue/devtools-kit@7.7.6':
     resolution: {integrity: sha512-geu7ds7tem2Y7Wz+WgbnbZ6T5eadOvozHZ23Atk/8tksHMFOFylKi1xgGlQlVn0wlkEf4hu+vd5ctj1G4kFtwA==}
 
+  '@vue/devtools-kit@7.7.9':
+    resolution: {integrity: sha512-PyQ6odHSgiDVd4hnTP+aDk2X4gl2HmLDfiyEnn3/oV+ckFDuswRs4IbBT7vacMuGdwY/XemxBoh302ctbsptuA==}
+
   '@vue/devtools-shared@7.7.6':
     resolution: {integrity: sha512-yFEgJZ/WblEsojQQceuyK6FzpFDx4kqrz2ohInxNj5/DnhoX023upTv4OD6lNPLAA5LLkbwPVb10o/7b+Y4FVA==}
+
+  '@vue/devtools-shared@7.7.9':
+    resolution: {integrity: sha512-iWAb0v2WYf0QWmxCGy0seZNDPdO3Sp5+u78ORnyeonS6MT4PC7VPrryX2BpMJrwlDeaZ6BD4vP4XKjK0SZqaeA==}
 
   '@vue/reactivity@3.5.15':
     resolution: {integrity: sha512-GaA5VUm30YWobCwpvcs9nvFKf27EdSLKDo2jA0IXzGS344oNpFNbEQ9z+Pp5ESDaxyS8FcH0vFN/XSe95BZtHQ==}
@@ -2288,6 +2294,9 @@ packages:
 
   birpc@2.3.0:
     resolution: {integrity: sha512-ijbtkn/F3Pvzb6jHypHRyve2QApOCZDR25D/VnkY2G/lBNcXCTsnsCxgY4k4PkVB7zfwzYbY3O9Lcqe3xufS5g==}
+
+  birpc@2.9.0:
+    resolution: {integrity: sha512-KrayHS5pBi69Xi9JmvoqrIgYGDkD6mcSe/i6YKi3w5kekCLzrX4+nawcXqrj2tIp50Kw/mT/s3p+GVK0A0sKxw==}
 
   blob-to-buffer@1.2.9:
     resolution: {integrity: sha512-BF033y5fN6OCofD3vgHmNtwZWRcq9NLyyxyILx9hfMy1sXYy4ojFl765hJ2lP0YaN2fuxPaLO2Vzzoxy0FLFFA==}
@@ -2540,6 +2549,10 @@ packages:
     resolution: {integrity: sha512-yCEafptTtb4bk7GLEQoM8KVJpxAfdBJYaXyzQEgQQQgYrZiDp8SJmGKlYza6CYjEDNstAdNdKA3UuoULlEbS6w==}
     engines: {node: '>=12.13'}
 
+  copy-anything@4.0.5:
+    resolution: {integrity: sha512-7Vv6asjS4gMOuILabD3l739tsaxFQmC+a7pLZm02zyvs8p977bL3zEgq3yDk5rn9B0PbYgIv++jmHcuUab4RhA==}
+    engines: {node: '>=18'}
+
   copy-file@11.0.0:
     resolution: {integrity: sha512-mFsNh/DIANLqFt5VHZoGirdg7bK5+oTWlhnGu6tgRhzBlnEKWaPX2xrFaLltii/6rmhqFMJqffUgknuRdpYlHw==}
     engines: {node: '>=18'}
@@ -2569,6 +2582,7 @@ packages:
 
   cronstrue@2.61.0:
     resolution: {integrity: sha512-ootN5bvXbIQI9rW94+QsXN5eROtXWwew6NkdGxIRpS/UFWRggL0G5Al7a9GTBFEsuvVhJ2K3CntIIVt7L2ILhA==}
+    deprecated: Non-backwards compatible Breaking changes
     hasBin: true
 
   cross-fetch@3.2.0:
@@ -3345,12 +3359,13 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -3617,6 +3632,10 @@ packages:
   is-what@4.1.16:
     resolution: {integrity: sha512-ZhMwEosbFJkA0YhFnNDgTM4ZxDRsS6HqTo7qsZM08fehyRYIYa0yHu5R6mgo1n/8MgaPBXiPimPD77baVFYg+A==}
     engines: {node: '>=12.13'}
+
+  is-what@5.5.0:
+    resolution: {integrity: sha512-oG7cgbmg5kLYae2N5IVd3jm2s+vldjxJzK1pcu9LfpGuQ93MQSzo0okvRna+7y5ifrD+20FE8FvjusyGaz14fw==}
+    engines: {node: '>=18'}
 
   is-wsl@2.2.0:
     resolution: {integrity: sha512-fKzAra0rGJUUBwGBgNkHZuToZcn+TtXHpeCgmkMJMMYx1sQDYaCSyjJBSCa2nH1DGm7s3n1oBnohoVTBaN7Lww==}
@@ -4958,8 +4977,8 @@ packages:
   smoldot@2.0.34:
     resolution: {integrity: sha512-mw9tCbGEhEp0koMqLL0jBEixVY1MIN/xI3pE6ZY1TuOPU+LnYy8FloODVyzkvzQPaBYrETXJdRlmA/+k6g3gow==}
 
-  smoldot@2.0.35:
-    resolution: {integrity: sha512-miWiDZleigZJLzqamQsaqihlJh5krd56X8ItgF45GRVGbI0sTqkhUwcMPy1jm56qHKBmXPf5RJf3bpkKpAzGig==}
+  smoldot@3.1.1:
+    resolution: {integrity: sha512-aPc/0qCUB6RWwpGhLmDi7odeQTrLZfsDpZjxYQZRqqcGUituI2O26QSl3fFREJOczl4/R8duAmH2Mu4D7HoPww==}
 
   sort-keys@5.1.0:
     resolution: {integrity: sha512-aSbHV0DaBcr7u0PVHXzM6NbZNAtrr9sF6+Qfs9UUVG7Ll3jQ6hHi8F/xqIIcn2rvIVbr0v/2zyjSdwSV47AgLQ==}
@@ -4983,6 +5002,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   spdx-correct@3.2.0:
     resolution: {integrity: sha512-kN9dJbvnySHULIluDHy32WHRUu3Og7B9sbY7tsFLctQkIqnMh3hErYgdMjTYuqmcXX+lK5T1lnUt3G7zNswmZA==}
@@ -5096,6 +5116,10 @@ packages:
     resolution: {integrity: sha512-5JRxVqC8I8NuOUjzBbvVJAKNM8qoVuH0O77h4WInc/qC2q5IreqKxYwgkga3PfA22OayK2ikceb/B26dztPl+Q==}
     engines: {node: '>=16'}
 
+  superjson@2.2.6:
+    resolution: {integrity: sha512-H+ue8Zo4vJmV2nRjpx86P35lzwDT3nItnIsocgumgr0hHMQ+ZGq5vrERg9kJBo5AWGmxZDhzDo+WVIJqkB0cGA==}
+    engines: {node: '>=16'}
+
   supports-color@10.0.0:
     resolution: {integrity: sha512-HRVVSbCCMbj7/kdWF9Q+bbckjBHLtHMEoJWlkmYzzdwhYMkjkOwubLM6t7NbWKjgKamGDrWL1++KrjUO1t9oAQ==}
     engines: {node: '>=18'}
@@ -5143,6 +5167,7 @@ packages:
   tar@7.4.3:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   terser@5.40.0:
     resolution: {integrity: sha512-cfeKl/jjwSR5ar7d0FGmave9hFGJT8obyo0z+CrQOylLDbk7X81nPU6vq9VORa5jU30SkDnT2FXjLbR8HLP+xA==}
@@ -5363,6 +5388,7 @@ packages:
 
   unplugin-vue-router@0.12.0:
     resolution: {integrity: sha512-xjgheKU0MegvXQcy62GVea0LjyOdMxN0/QH+ijN29W62ZlMhG7o7K+0AYqfpprvPwpWtuRjiyC5jnV2SxWye2w==}
+    deprecated: 'Merged into vuejs/router. Migrate: https://router.vuejs.org/guide/migration/v4-to-v5.html'
     peerDependencies:
       vue-router: ^4.4.0
     peerDependenciesMeta:
@@ -5641,6 +5667,7 @@ packages:
   vue-i18n@10.0.7:
     resolution: {integrity: sha512-bKsk0PYwP9gdYF4nqSAT0kDpnLu1gZzlxFl885VH4mHVhEnqP16+/mAU05r1U6NIrc0fGDWP89tZ8GzeJZpe+w==}
     engines: {node: '>= 16'}
+    deprecated: v9 and v10 no longer supported. please migrate to v11. about maintenance status, see https://vue-i18n.intlify.dev/guide/maintenance.html
     peerDependencies:
       vue: ^3.0.0
 
@@ -5740,6 +5767,18 @@ packages:
 
   ws@8.18.2:
     resolution: {integrity: sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+  ws@8.20.0:
+    resolution: {integrity: sha512-sAt8BhgNbzCtgGbt2OxmpuryO63ZoDk/sqaB/znQm94T4fCEsy/yV+7CdC1kJhOU9lboAEU7R3kquuycDoibVA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -6284,7 +6323,7 @@ snapshots:
       mrmime: 2.0.1
       open: 10.1.2
       tinyglobby: 0.2.14
-      ws: 8.18.2
+      ws: 8.20.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -6818,7 +6857,7 @@ snapshots:
       vite-plugin-inspect: 11.1.0(@nuxt/kit@3.17.4(magicast@0.3.5))(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0)(yaml@2.8.0))
       vite-plugin-vue-tracer: 0.1.3(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0)(yaml@2.8.0))(vue@3.5.15(typescript@5.8.3))
       which: 5.0.0
-      ws: 8.18.2
+      ws: 8.20.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -7519,7 +7558,7 @@ snapshots:
     dependencies:
       '@polkadot-api/json-rpc-provider': 0.0.4
       '@polkadot-api/json-rpc-provider-proxy': 0.2.4
-      ws: 8.18.2
+      ws: 8.20.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -8187,9 +8226,9 @@ snapshots:
 
   '@vue/devtools-api@6.6.4': {}
 
-  '@vue/devtools-api@7.7.6':
+  '@vue/devtools-api@7.7.9':
     dependencies:
-      '@vue/devtools-kit': 7.7.6
+      '@vue/devtools-kit': 7.7.9
 
   '@vue/devtools-core@7.6.8(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0)(yaml@2.8.0))(vue@3.5.15(typescript@5.8.3))':
     dependencies:
@@ -8235,7 +8274,21 @@ snapshots:
       speakingurl: 14.0.1
       superjson: 2.2.2
 
+  '@vue/devtools-kit@7.7.9':
+    dependencies:
+      '@vue/devtools-shared': 7.7.9
+      birpc: 2.9.0
+      hookable: 5.5.3
+      mitt: 3.0.1
+      perfect-debounce: 1.0.0
+      speakingurl: 14.0.1
+      superjson: 2.2.6
+
   '@vue/devtools-shared@7.7.6':
+    dependencies:
+      rfdc: 1.4.1
+
+  '@vue/devtools-shared@7.7.9':
     dependencies:
       rfdc: 1.4.1
 
@@ -8469,6 +8522,8 @@ snapshots:
   birpc@0.2.19: {}
 
   birpc@2.3.0: {}
+
+  birpc@2.9.0: {}
 
   blob-to-buffer@1.2.9: {}
 
@@ -8708,6 +8763,10 @@ snapshots:
   copy-anything@3.0.5:
     dependencies:
       is-what: 4.1.16
+
+  copy-anything@4.0.5:
+    dependencies:
+      is-what: 5.5.0
 
   copy-file@11.0.0:
     dependencies:
@@ -9861,6 +9920,8 @@ snapshots:
 
   is-what@4.1.16: {}
 
+  is-what@5.5.0: {}
+
   is-wsl@2.2.0:
     dependencies:
       is-docker: 2.2.1
@@ -10768,7 +10829,7 @@ snapshots:
 
   pinia@3.0.2(typescript@5.8.3)(vue@3.5.15(typescript@5.8.3)):
     dependencies:
-      '@vue/devtools-api': 7.7.6
+      '@vue/devtools-api': 7.7.9
       vue: 3.5.15(typescript@5.8.3)
     optionalDependencies:
       typescript: 5.8.3
@@ -11380,14 +11441,14 @@ snapshots:
 
   smoldot@2.0.34:
     dependencies:
-      ws: 8.18.2
+      ws: 8.20.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  smoldot@2.0.35:
+  smoldot@3.1.1:
     dependencies:
-      ws: 8.18.2
+      ws: 8.20.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -11526,6 +11587,10 @@ snapshots:
   superjson@2.2.2:
     dependencies:
       copy-anything: 3.0.5
+
+  superjson@2.2.6:
+    dependencies:
+      copy-anything: 4.0.5
 
   supports-color@10.0.0: {}
 
@@ -12236,6 +12301,8 @@ snapshots:
       write-json-file: 6.0.0
 
   ws@8.18.2: {}
+
+  ws@8.20.0: {}
 
   xml-name-validator@4.0.0: {}
 
